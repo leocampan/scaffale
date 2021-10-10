@@ -61,13 +61,14 @@ public class Mensola {
         for (int i = 0; i < volumi.length; i++) {
             if (volumi[i] == null) {
                 volumi[i] = l;
+                return;
             }
         }
     }
 
-    public void addLibroPlus (int pos, Libro l) throws Exception {
+    public void addLibroPlus (int pos, Libro l) {
         if (volumi[MAX_NUM_VOLUMI - 1] != null) {
-            throw new Exception("Non c'è spazio sulla mensola");
+            
         }
         else {
             for (int i = volumi.length - 1; i > pos; i--) { // Parto dal fonto perchè se no la posizione dove vado a copiare i libri prima andrebbe persa
@@ -84,7 +85,8 @@ public class Mensola {
 
     public int getNumVolumi() {
         int num = 0;
-        for (int i=0; i<MAX_NUM_VOLUMI; i++){
+
+        for (int i = 0; i < MAX_NUM_VOLUMI; i++){
             if (volumi[i]!= null) {
                 num += 1;
             }      
@@ -95,6 +97,7 @@ public class Mensola {
 
     public String toString() {
         String s =" ";
+        
         for (int i = 0; i < volumi.length; i++) {
             s += String.format("%s\n", volumi[i]);
         }

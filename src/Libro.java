@@ -6,14 +6,15 @@ public class Libro {
     private double costoPagine = 0.05;
     private static double costoFisso = 5.5;
 
-    /**************************************** MASTER ****************************************/
+    /**************************************** COSTRUTTORI ****************************************/
+    /* Master */
     public Libro (String titolo, String autore, int numeroPagine) {
         this.titolo = titolo;
         this.autore = autore;
         this.numeroPagine = numeroPagine;
     }
 
-    /**************************************** COPIA ***************************************/
+    /* Copia */
     public Libro (Libro libro) {
         this.titolo = libro.getTitolo();
         this.autore = libro.getAutore();
