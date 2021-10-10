@@ -95,6 +95,18 @@ public class Mensola {
         return num;
     }
 
+    public int numLibriStessoAutore(String autore) {
+        int num = 0;
+
+        for (int i = 0; i < volumi.length; i++) {
+            if (volumi[i].getAutore().equals(autore)) {
+                num += 1;
+            }
+        }
+
+        return num;
+    }
+
     public String toString() {
         String s =" ";
         

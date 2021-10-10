@@ -62,7 +62,7 @@ public class App {
             }
 
             if (l1 != null) {
-                System.out.println("Ripiano: " + ripiano + "\nPosizione: " + posizione + " --> " + "\nTitolo [" + l1.getTitolo() + "]" + "\nPrezzo [" + l1.Prezzo(l1) + "€");
+                System.out.println("Ripiano: " + ripiano + "\nPosizione: " + " --> " + "\nTitolo [" + l1.getTitolo() + "]" + "\nPrezzo [" + l1.Prezzo(l1) + "€");
             }
         }
         

@@ -107,6 +107,21 @@ public class Scaffale {
         return n;
     }
 
+    /*
+    public Libro getLibroAutore(String autore) {
+        Libro[] libri;
+        int num = 0;
+        
+        for (int i = 0; i < ripiani.length; i++) {
+            if (ripiani[i]
+
+            }
+        }
+
+        return libri;
+    }
+    */
+
     /* Stampa dello scaffale */
     public String toString() {
         String s = "";
